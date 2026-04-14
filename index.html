@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="scuseApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Scuse v0</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+<div class="container">
+    <h1>Generatore di Scuse</h1>
+    <p class="sottotitolo">Non hai voglia di uscire? Premi il bottone.</p>
+
+    <div class="box-scusa">
+        <h2>{{ scusaAttuale }}</h2>
+    </div>
+
+    <button ng-click="generaScusa()">Trova una scusa!</button>
+</div>
+
+</body>
+</html>

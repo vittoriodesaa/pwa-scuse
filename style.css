@@ -1,0 +1,81 @@
+/* Resetta i margini e centra tutto a schermo intero */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Grigio chiarissimo di sfondo */
+    margin: 0;
+    height: 100vh; /* Occupa tutta l'altezza dello schermo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Il riquadro bianco centrale (la "scheda" dell'app) */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Ombra leggera */
+    width: 85%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sottotitolo {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Il riquadro colorato dove appare la scusa */
+.box-scusa {
+    background-color: #e3f2fd; /* Azzurrino chiaro */
+    border-left: 5px solid #2196f3; /* Linea blu laterale */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    min-height: 80px; /* Altezza minima per evitare salti grafici */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #1565c0; /* Blu scuro per il testo */
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Il bottone in stile app */
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3);
+
+    /* --- NUOVE REGOLE ANTI-INCEPPAMENTO TRACKPAD/TOUCH --- */
+    touch-action: manipulation; /* Rimuove il ritardo del browser che aspetta il doppio-click per lo zoom */
+    user-select: none; /* Impedisce di "selezionare" il testo del bottone se fai tap veloci */
+    -webkit-user-select: none; /* Stessa cosa, ma per Safari */
+    -webkit-tap-highlight-color: transparent; /* Toglie i flash grafici fastidiosi sui cellulari */
+}
+
+/* Effetto quando premi o passi sopra col mouse */
+button:active {
+    background-color: #1976d2;
+    transform: scale(0.98); /* Si rimpicciolisce leggermente quando premuto */
+}
