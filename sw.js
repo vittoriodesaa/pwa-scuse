@@ -1,5 +1,5 @@
 // Diamo un nome alla nostra "cassaforte" (fondamentale per quando faremo la v1)
-var NOME_CACHE = 'scuse-cache-v1';
+var NOME_CACHE = 'scuse-cache-v2';
 
 // La lista della spesa: i file che il maggiordomo deve mettere in cassaforte
 var fileDaSalvare = [
