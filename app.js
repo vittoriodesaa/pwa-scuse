@@ -11,7 +11,15 @@ app.controller('MainController', function($scope) {
         "Sto aspettando che un pacco venga consegnato nel 2028.",
         "Ho promesso al mio divano che stasera guardavamo un film insieme.",
         "C'è un aggiornamento di Windows in corso, potrebbe finire tra un mese.",
-        "Ho accidentalmente incollato le dita insieme con l'Attak."
+        "Ho accidentalmente incollato le dita insieme con l'Attak.",
+        "Devo assistere al tramonto dalla mia finestra, è una questione spirituale.",
+        "Il mio medico mi ha consigliato di evitare le situazioni in cui potrei divertirmi.",
+        "Sto aspettando che il mio nome diventi di moda prima di uscire.",
+        "Ho dimenticato come si apre una porta, ci sto riprendendo.",
+        "Il mio criceto ha avuto un sogno premonitore e mi ha sconsigliato di uscire.",
+        "Devo finire di leggere le istruzioni del microonde, sono arrivato a pagina 47.",
+        "Ho giurato fedeltà eterna al mio pigiama e non me la sento di tradirlo.",
+        "Sto monitorando l'evoluzione di una muffa interessante sul mio muro."
     ];
 
     // Cosa appare sullo schermo appena apri l'app:
