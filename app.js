@@ -22,6 +22,7 @@ app.controller('MainController', function($scope) {
         "Sto monitorando l'evoluzione di una muffa interessante sul mio muro."
     ];
 
+
     // Cosa appare sullo schermo appena apri l'app:
     $scope.scusaAttuale = "Premi il bottone per generare una scusa...";
 
@@ -55,5 +56,12 @@ if ('serviceWorker' in navigator) {
             .catch(function(error) {
                 console.log('Problemi con l\'assunzione del maggiordomo:', error);
             });
+    });
+}
+
+// Aggiungi questo pezzetto in fondo per l'auto-refresh
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
     });
 }
